@@ -1,80 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Social Media Dashboard</title>
 </head>
+
 <body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header>
+    <div id="heading">
+      <h1>Social Media Dashboard</h1>
+      <p>Total Followers: 23,004</p>
+    </div>
+    <div id="toggle-switch">
+      <p>Dark Mode</p>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </header>
+  <section id="main"></section>
+    <div class="big-card facebook">
+      <div class="border-top"></div>
+      <div class="content">
+        <p class="heading">
+          <img src="images/icon-facebook.svg" alt="facebook icon">
+          <span class="nickname">@nathanf</span>
+        </p>
+        <div class="current-number">
+          <span class="absolute-number">1987</span>
+          <span class="number-units">Followers</span>
+        </div>
+        <p class="variation-block up">
+          <img src="images/icon-up.svg" alt="up icon">
+          <span class="variation">12</span>
+          <span class="time-unit">Today</span>
+        </p>
+      </div>
+    </div>
+    <div class="big-card twitter">
+      <div class="border-top"></div>
+      <div class="content">
+        <p class="heading">
+          <img src="images/icon-twitter.svg" alt="twitter icon">
+          <span class="nickname">@nathanf</span>
+        </p>
+        <div class="current-number">
+          <span class="absolute-number">1044</span>
+          <span class="number-units">Followers</span>
+        </div>
+        <p class="variation-block up">
+          <img src="images/icon-up.svg" alt="up icon">
+          <span class="variation">99</span>
+          <span class="time-unit">Today</span>
+        </p>
+      </div>
+    </div>
+    <div class="big-card instagram">
+      <div class="border-top"></div>
+      <div class="content">
+        <p class="heading">
+          <img src="images/icon-instagram.svg" alt="instagram icon">
+          <span class="nickname">@realnathanf</span>
+        </p>
+        <div class="current-number">
+          <span class="absolute-number">11k</span>
+          <span class="number-units">Followers</span>
+        </div>
+        <p class="variation-block up">
+          <img src="images/icon-up.svg" alt="up icon">
+          <span class="variation">1099</span>
+          <span class="time-unit">Today</span>
+        </p>
+      </div>
+    </div>
+    <div class="big-card youtube">
+      <div class="border-top"></div>
+      <div class="content">
+        <p class="heading">
+          <img src="images/icon-youtube.svg" alt="youtube icon">
+          <span class="nickname">Nathan F.</span>
+        </p>
+        <div class="current-number">
+          <span class="absolute-number">8239</span>
+          <span class="number-units">Subscribers</span>
+        </div>
+        <p class="variation-block down">
+          <img src="images/icon-down.svg" alt="down icon">
+          <span class="variation">144</span>
+          <span class="time-unit">Today</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Overview - Today</h2>
+  </section>
+  <section>
+    <div class="small-card">
+      <div class="top">
+        <p class="topic">Page Views</p>
+        <img src="images/icon-facebook.svg" alt="facebook icon">
+      </div>
+      <div class="bottom">
+        <p class="absolute-number">87</p>
+        <p class="variation-block up">
+          <img src="images/icon-up.svg" alt="up icon">
+          <span class="variation">3%</span>
+        </p>
+      </div>
+    </div>
+    <div class="small-card">
+      <div class="top">
+        <p class="topic">Likes</p>
+        <img src="images/icon-facebook.svg" alt="facebook icon">
+      </div>
+      <div class="bottom">
+        <p class="absolute-number">52</p>
+        <p class="variation-block down">
+          <img src="images/icon-down.svg" alt="down icon">
+          <span class="variation">2%</span>
+        </p>
+      </div>
+    </div>
+    <div class="small-card">
+      <div class="top">
+        <p class="topic">Likes</p>
+        <img src="images/icon-instagram.svg" alt="instagram icon">
+      </div>
+      <div class="bottom">
+        <p class="absolute-number">5462</p>
+        <p class="variation-block up">
+          <img src="images/icon-up.svg" alt="up icon">
+          <span class="variation">2257%</span>
+        </p>
+      </div>
+    </div>
+    <div class="small-card">
+      <div class="top">
+        <p class="topic">Profile Views</p>
+        <img src="images/icon-instagram.svg" alt="instagram icon">
+      </div>
+      <div class="bottom">
+        <p class="absolute-number">52k</p>
+        <p class="variation-block up">
+          <img src="images/icon-up.svg" alt="up icon">
+          <span class="variation">1375%</span>
+        </p>
+      </div>
+    </div>
+    <div class="small-card">
+      <div class="top">
+        <p class="topic">Retweets</p>
+        <img src="images/icon-twitter.svg" alt="twitter icon">
+      </div>
+      <div class="bottom">
+        <p class="absolute-number">117</p>
+        <p class="variation-block up">
+          <img src="images/icon-up.svg" alt="up icon">
+          <span class="variation">303%</span>
+        </p>
+      </div>
+    </div>
+    <div class="small-card">
+      <div class="top">
+        <p class="topic">Likes</p>
+        <img src="images/icon-twitter.svg" alt="twitter icon">
+      </div>
+      <div class="bottom">
+        <p class="absolute-number">507</p>
+        <p class="variation-block up">
+          <img src="images/icon-up.svg" alt="up icon">
+          <span class="variation">553%</span>
+        </p>
+      </div>
+    </div>
+    <div class="small-card">
+      <div class="top">
+        <p class="topic">Likes</p>
+        <img src="images/icon-youtube.svg" alt="youtube icon">
+      </div>
+      <div class="bottom">
+        <p class="absolute-number">107</p>
+        <p class="variation-block down">
+          <img src="images/icon-down.svg" alt="down icon">
+          <span class="variation">19%</span>
+        </p>
+      </div>
+    </div>
+    <div class="small-card">
+      <div class="top">
+        <p class="topic">Total Views</p>
+        <img src="images/icon-youtube.svg" alt="youtube icon">
+      </div>
+      <div class="bottom">
+        <p class="absolute-number">1407</p>
+        <p class="variation-block down">
+          <img src="images/icon-down.svg" alt="down icon">
+          <span class="variation">12%</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">L4ur3l3i</a>.
+  </footer>
+  <script src="js/theme.js"></script>
 </body>
+
 </html>
